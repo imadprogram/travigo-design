@@ -30,7 +30,9 @@ nav ul{
     list-style: none;
     margin-right: 120px;
 }
-
+nav img{
+    display: none;
+}
 nav ul li a{
     text-decoration: none;
     color: black;
@@ -636,6 +638,8 @@ footer .texts .discover .icons i{
     display: flex;
     justify-content: space-around;
     margin-top: 4em;
+    flex-wrap: wrap;
+    gap: 40px;
 }
  
 /* stays section */
@@ -645,6 +649,8 @@ footer .texts .discover .icons i{
     display: flex;
     justify-content: space-around;
     margin: 7em 0;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 .stays .cards .card{
     height: 270px;
@@ -698,6 +704,7 @@ footer .texts .discover .icons i{
 .about .first-container{
     display: flex;
     gap: 8em;
+    flex-wrap: wrap;
 }
 .about .first-container .mission{
     transform: translateY(100px);
@@ -821,21 +828,29 @@ footer .texts .discover .icons i{
   body {
     width: 100vw;
   }
-nav ul{
+nav ul a .text{
     display: none;
-    gap: 10px;
 }
 nav{
     display: flex;
     justify-content: start;
     padding-left: 20px;
 }
-nav a{
+nav .login-btn , nav .sign-btn{
     display: none;
 }
-
+nav h1{
+    display: none;
+}
 nav h3{
     display: none;
+}
+nav img{
+    width: 30px;
+    display: block;
+}
+nav ul{
+    gap: 75px;
 }
 
 
@@ -1048,6 +1063,57 @@ footer .texts .discover h3{
 footer .texts .discover .icons{
     display: flex;
     justify-content: center;
+}
+
+
+/* ------------------------------------------- */
+/* Destinations page */
+/* ------------------------------------------- */
+
+
+
+
+.our-destinations , .our-tours , .stays{
+    margin: 0;
+}
+.our-destinations .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* about page */
+
+.about{
+    margin: 0;
+    font-size: 12pt;
+}
+.about .first-container .mission{
+    transform: none;
+}
+.about .first-container .who p:nth-of-type(2){
+      box-sizing: border-box;
+      padding: 0 30px;
+}
+.about .first-container .mission p:nth-of-type(2){
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.about .first-container .mission{
+    margin-bottom: 50px;
+}
+.about img{
+    display: none;
+}
+.about .first-container {
+    padding: 0 10px;
+}
+.about .second-container{
+    margin-bottom: 40px;
+}
+.about .second-container{
+    box-sizing: border-box;
+    padding: 40px;
 }
 
 }
