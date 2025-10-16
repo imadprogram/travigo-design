@@ -1116,4 +1116,38 @@ footer .texts .discover .icons{
     padding: 40px;
 }
 
+/* contact page */
+
+
+
+.contact{
+    margin: 0;
+    justify-content: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: start;
+}
+.contact:before{
+    display: none;
+}
+.contact form{
+    width: 80%;
+}
+.contact form input{
+    background: white;
+    border: solid rgba(0, 0, 0, .1);
+    height: 50px;
+}
+.contact form textarea{
+    background: white;
+    border: solid rgba(0, 0, 0, .1);
+}
+.contact form button{
+    background: orange;
+    color: white;
+    margin-bottom: 40px;
+}
+.contact img{
+    display: none;
+}
 }
